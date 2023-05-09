@@ -55,6 +55,7 @@
     - Accessing Properties
     - Adding Properties
     - Removing Properties
+    - "this" Keyword
     - "in" Operator
     - "For in" loop
     - Object references
@@ -119,6 +120,32 @@ console.log(player.color) // "red"
 delete player.color
 console.log(player.color) // undefined
 ```
+
+== "this" Keyword
+
+#columns(2, [
+    
+```js
+const player = {
+    health: 30,
+    color: "red",
+    sayColor: function() {
+        console.log(this.color)
+    }
+    takeDamage() {
+        this.health -= 10
+    }
+}
+```
+
+```js
+player.sayColor() // "red"
+player.takeDamage()
+
+console.log(player.health)
+// 20
+```
+])
 
 == The "in" Operator
 
