@@ -325,11 +325,10 @@ myArray.at(-2) // "c"
 == Tasks and Points
 Goal is to get 100 Points.
 #columns(2, [
-- `basic-arrays` (25 Points)
-- `basic-functions` (25 Points)
-- `default-arguments` (25 Points)
-- `expressions-arrows` (25 Points)
-- `return-values` (25 Points)
-- `shop` (50 Points)
-- `tic-tac-toe` (50 Points)
+- `array-methods` (25 Points)
+- `basic-objects` (25 Points)
+- `in-keyword` (25 Points)
+- `object-references` (25 Points)
+- `graph-calculator` (50 Points)
+- `login-system` (50 Points)
 ])

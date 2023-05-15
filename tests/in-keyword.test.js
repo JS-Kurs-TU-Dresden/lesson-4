@@ -1,8 +1,8 @@
 import { expect, test, describe, vi } from 'vitest'
 
-describe('basic-objects', async () => {
+describe('in-keyword', async () => {
 
-    const {cakes, increasePrice, sellCake} = await import('../tasks/in-keyword.js')
+    const { cakes, increasePrice, sellCake } = await import('../tasks/in-keyword.js')
 
     test('cakes', () => {
         expect(cakes).toEqual([
