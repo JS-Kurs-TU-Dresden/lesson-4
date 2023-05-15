@@ -17,31 +17,9 @@ const canvas = {
     yLength: 20,
     xLength: 40,
     pixels: [],
-    clearPixels() {
-        this.pixels = []
-        for (let i = 0; i < this.xLength; i++) {
-            this.pixels.push([])
-            for (let j = 0; j < this.yLength; j++) {
-                this.pixels[i].push(0)
-            }
-        }
-    },
-    drawFunction(func) {
-        this.clearPixels()
 
-        for (let i = 0; i < this.xLength; i++) {
-            const y = Math.floor(func(i))
-            this.pixels[i][y] = 1
-        }
-    },
-    fillCube(x, y, size) {
-        this.clearPixels()
-        for (let i = x; i < x + size; i++) {
-            for (let j = y; j < y + size; j++) {
-                this.pixels[i][j] = 1
-            }
-        }
-    },
+    // Implement the 3 methods here
+
     showCanvas() {
         let canvas = ""
 
@@ -66,12 +44,9 @@ const canvas = {
     }
 }
 
-canvas.clearPixels()
-canvas.drawFunction((x) => {
-    return (x / 4 - 5) ** 2
-})
+// Now you can access the canvas object and call the methods to draw a function on the canvas.
+// Play around with the canvas object and try to draw a function on it.
 
-canvas.showCanvas()
 
 
 

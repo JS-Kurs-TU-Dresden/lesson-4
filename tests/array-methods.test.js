@@ -2,7 +2,7 @@ import { expect, test, describe, vi } from 'vitest'
 
 describe('array-methods', async () => {
 
-    const {carPark, lastCar, firstCar, secondCar, secondLastCar, volvo, volvoIndex, redCars, carNames, longCarNames } = await import('../tasks/array-methods.js')
+    const { carPark, lastCar, firstCar, secondCar, secondLastCar, volvo, volvoIndex, redCars, carNames, longCarNames } = await import('../tasks/array-methods.js')
 
     test('carPark', () => {
         expect(carPark).toEqual([
@@ -36,6 +36,7 @@ describe('array-methods', async () => {
 
     test('volvo', () => {
         expect(volvo).toEqual({ name: 'Volvo', color: 'yellow' })
+        expect(volvo).toBe(carPark[4])
     })
 
     test('volvoIndex', () => {
@@ -60,10 +61,10 @@ describe('array-methods', async () => {
             'Renault',
             'Opel',
             'Toyota'
-          ])
+        ])
     })
 
     test('longCarNames', () => {
-        expect(longCarNames).toEqual([ 'Mazda', 'Mercedes', 'Renault', 'Skoda', 'Toyota', 'Volvo' ])
+        expect(longCarNames).toEqual(['Mazda', 'Mercedes', 'Renault', 'Skoda', 'Toyota', 'Volvo'])
     })
 })

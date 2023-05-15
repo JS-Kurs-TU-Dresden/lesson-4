@@ -26,31 +26,11 @@ const cakes = [
 // increasePrice(amount) - increases the price of all cakes by the given amount
 
 function sellCake(type, amount) {
-    for (let index in cakes) {
-
-        const cake = cakes[index]
-        if ('price' in cake === false) {
-            continue
-        }
-
-        if (cake.type === type) {
-            return cake.price * amount
-        }
-    }
-
-    return 0
+    ___
 }
 
 function increasePrice(amount) {
-    for (let index in cakes) {
-        const cake = cakes[index]
-
-        if ('price' in cake === false) {
-            continue
-        }
-
-        cake.price = cake.price * amount
-    }
+    ___
 }
 
 

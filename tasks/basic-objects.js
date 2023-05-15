@@ -7,32 +7,34 @@ const person = {
     name: 'John',
     age: 30,
     hobbies: ['reading', 'music', 'movies'],
+    // Each time this method is called, the age property should increase by 1
     birthday() {
-        this.age++;
+        ___
     },
+    // This method should return the birth year of the person
     getBirthYear() {
-        return CURRENT_YEAR - this.age;
+        ___
     },
     "likes reading": true,
 };
 
 // Access the correct value from the person object
-const personAge = person.age;
-const likesReading = person["likes reading"];
+const personAge = ___;
+const likesReading = ___;
 
 // Call the birthday method on the person object
-person.birthday();
+___
 
 // Get the birth year of the person
-const personBirthYear = person.getBirthYear();
+const personBirthYear = ___;
 
-// Add a height property to the person object
-person.height = 180;
+// Add a height property to the person object, which value you assign does not matter
+___
 
 // The function should delete the hobbies and "likes reading" properties from the person object
 function cleanPerson() {
-    delete person.hobbies;
-    delete person["likes reading"];
+    ___
+    ___
 }
 
 

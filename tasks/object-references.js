@@ -11,21 +11,17 @@ const song = {
 // Implement a function that takes in an object and returns the clone.
 // The clone should be a new object with the same properties and values as the song object.
 function cloneSong(song) {
-    const clone = {};
-    for (const key in song) {
-        clone[key] = song[key];
-    }
-    return clone;
+    ___
 }
 
 // Set the songReference variable to reference the song object.
-const songReference = song;
+const songReference = ___;
 
 // Set the songClone variable to be a clone of the song object.
-const songClone = cloneSong(song);
+const songClone = ___;
 
 // Change the name of the song object to 'Believer'.
-songReference.name = 'Believer';
+___
 
 
 

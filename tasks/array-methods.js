@@ -1,3 +1,4 @@
+// Replace the (___) with the correct values to make the code work.
 // All methods that can be used on arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#array_methods_and_empty_slots
 // For more info, see: https://javascript.info/array-methods
 
@@ -13,35 +14,35 @@ const carPark = [
 ]
 
 // Add 2 more cars to the car park
-carPark.push({ name: 'Toyota', color: 'purple' }, { name: 'Volkswagen', color: 'brown' });
+carPark.___({ name: 'Toyota', color: 'purple' }, { name: 'Volkswagen', color: 'brown' });
 
 // Remove the last car from the car park
-const lastCar = carPark.pop();
+const lastCar = ___;
 
 // Remove the first car from the car park
-const firstCar = carPark.shift();
+const firstCar = ___;
 
 // Add a new car to the beginning of the car park
-carPark.unshift({ name: 'Mazda', color: 'pink' });
+___({ name: 'Mazda', color: 'pink' });
 
 // Get the second and second last car from the car park using the at() method
-const secondCar = carPark.at(1);
-const secondLastCar = carPark.at(-2);
+const secondCar = ___;
+const secondLastCar = ___;
 
 // Find the car with the name 'Volvo'
-const volvo = carPark.find(car => car.name === 'Volvo');
+const volvo = ___;
 
 // Find the index of the car with the name 'Volvo'
-const volvoIndex = carPark.findIndex(car => car.name === 'Volvo');
+const volvoIndex = ___;
 
 // Find all cars with the color 'red'
-const redCars = carPark.filter(car => car.color === 'red');
+const redCars = ___;
 
 // Get a list of all the car names
-const carNames = carPark.map(car => car.name);
+const carNames = ___;
 
 // Get a list of all car names that have more than 4 letters sorted alphabetically
-const longCarNames = carPark.filter(car => car.name.length > 4).map(car => car.name).sort();
+const longCarNames = ___;
 
 
 
