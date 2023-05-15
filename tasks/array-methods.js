@@ -1,4 +1,5 @@
 // All methods that can be used on arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#array_methods_and_empty_slots
+// For more info, see: https://javascript.info/array-methods
 
 const carPark = [
     { name: 'BMW', color: 'red' },

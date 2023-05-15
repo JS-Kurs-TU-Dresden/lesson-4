@@ -1,3 +1,6 @@
+// Replace the (___) with the correct values to make the code work.
+// For more info, see: https://javascript.info/object#property-existence-test-in-operator and https://javascript.info/object#forin
+
 const cakes = [
     {
         type: 'Chocolate',
@@ -17,15 +20,20 @@ const cakes = [
     }
 ]
 
+// Given the cakes array above, implement the following functions:
+//
+// sellCake(type, amount) - returns the total price of the sold cakes of the given type. If the cake or price is not found, return 0.
+// increasePrice(amount) - increases the price of all cakes by the given amount
+
 function sellCake(type, amount) {
-    for(let index in cakes) {
+    for (let index in cakes) {
 
         const cake = cakes[index]
-        if('price' in cake === false) {
+        if ('price' in cake === false) {
             continue
         }
 
-        if(cake.type === type) {
+        if (cake.type === type) {
             return cake.price * amount
         }
     }
@@ -34,10 +42,10 @@ function sellCake(type, amount) {
 }
 
 function increasePrice(amount) {
-    for(let index in cakes) {
+    for (let index in cakes) {
         const cake = cakes[index]
 
-        if('price' in cake === false) {
+        if ('price' in cake === false) {
             continue
         }
 

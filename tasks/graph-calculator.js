@@ -1,3 +1,18 @@
+// The goal of this task is to create a canvas object that can draw a function on a graph.
+// The showCanvas method is already implemented. It will show the canvas in the console.
+
+// What has to be implemented are the following 3 methods:
+// 1. clearPixels() - this method should clear the canvas and set all pixels to 0.
+//                    If the pixels array is empty, it should create a 2D array of 0s with the size of xLength and yLength.
+//
+// 2. drawFunction(func) - this method should draw a function on the canvas. The function is passed as an argument.
+//                         The function takes an x value and returns a y value.
+//                         The function should draw the function on the canvas by setting the pixels to 1.
+//
+// 3. fillCube(x, y, size) - this method should fill a square on the canvas with 1s.
+//                           The square should start at the x and y coordinates and have the size of the size argument.
+//                           The square should be filled with 1s.
+
 const canvas = {
     yLength: 20,
     xLength: 40,
@@ -13,7 +28,7 @@ const canvas = {
     },
     drawFunction(func) {
         this.clearPixels()
-        
+
         for (let i = 0; i < this.xLength; i++) {
             const y = Math.floor(func(i))
             this.pixels[i][y] = 1
@@ -40,13 +55,13 @@ const canvas = {
                     canvas += "*"
                 }
             }
-            
+
             canvas += "\n"
         }
 
         canvas += "   0    5    1    1    2     2   3    3\n"
         canvas += "             0    5    0     5   0    5"
-        
+
         console.log(canvas)
     }
 }

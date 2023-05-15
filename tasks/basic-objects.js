@@ -1,4 +1,5 @@
 // Replace the (___) with the correct values to make the code work.
+// For more info, see: https://javascript.info/object
 
 const CURRENT_YEAR = 2023;
 
