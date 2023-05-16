@@ -60,7 +60,6 @@
     - "For in" loop
     - Object references
     - Garbage Collection
-#colbreak()
 - Methods on Primitives
 - More about Arrays
     - Arrays are Objects
